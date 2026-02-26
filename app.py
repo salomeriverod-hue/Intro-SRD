@@ -6,3 +6,8 @@ image = Image.open ("samicalvo.jpeg")
 st.image(image, caption= "este es sami")
 texto = st.text_input("Ingresa texto", "texto inicial")
 st.write("El texto que has escrito es", texto)
+if st.button ("presiona el botón"):
+  st.write("has presionado")
+  
+  
+  
