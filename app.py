@@ -1,6 +1,6 @@
 import streamlit as st
 st.title ("Mi primera app")
-st.header ("Esta página está dedicada a mi")
+st.header ("Esta página está dedicada a sami")
 from PIL import Image
 image = Image.open ("samicalvo.jpeg")
 st.image(image, caption= "este es sami")
