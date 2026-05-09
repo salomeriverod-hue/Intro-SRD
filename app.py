@@ -66,21 +66,28 @@ search = st.text_input("🔎 Buscar proyecto")
 apps = [
     {
         "name": "App 1",
-        "description": "Descripción del proyecto 1",
         "url": "https://tu-app-1.streamlit.app",
-        "github": "https://github.com/usuario/app1"
+       
     },
     {
         "name": "App 2",
-        "description": "Descripción del proyecto 2",
         "url": "https://tu-app-2.streamlit.app",
-        "github": "https://github.com/usuario/app2"
+        
     },
     {
         "name": "App 3",
-        "description": "Descripción del proyecto 3",
         "url": "https://tu-app-3.streamlit.app",
-        "github": "https://github.com/usuario/app3"
+        
+    },
+     {
+        "name": "App 1",
+        "url": "https://tu-app-1.streamlit.app",
+       
+    },
+     {
+        "name": "App 1",
+        "url": "https://tu-app-1.streamlit.app",
+       
     },
 
     # 👉 duplica hasta 20
