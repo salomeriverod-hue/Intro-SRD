@@ -17,7 +17,6 @@ st.markdown(
         background-color: #F6F1E8;
     }
 
-    /* HERO */
     .hero {
         background: linear-gradient(135deg, #4B1E2F, #7A2E3A);
         padding: 40px;
@@ -29,7 +28,7 @@ st.markdown(
 
     .hero h1 {
         color: white;
-        font-size: 42px;
+        font-size: 40px;
         margin-bottom: 5px;
     }
 
@@ -38,7 +37,6 @@ st.markdown(
         font-size: 18px;
     }
 
-    /* CARD */
     .card {
         background: white;
         padding: 18px;
@@ -63,7 +61,6 @@ st.markdown(
         font-size: 14px;
     }
 
-    /* TAG */
     .tag {
         display: inline-block;
         background: #7A2E3A;
@@ -80,13 +77,13 @@ st.markdown(
 )
 
 # =========================
-# HERO SECTION
+# HERO
 # =========================
 st.markdown(
     """
     <div class="hero">
-        <h1>✨ Salomé Rivero</h1>
-        <p>Portafolio de proyectos en Inteligencia Artificial · Python · Streamlit</p>
+        <h1>✨ Portafolio de Salomé Rivero</h1>
+        <p>Inteligencia Artificial · Python · Streamlit · Data Science</p>
     </div>
     """,
     unsafe_allow_html=True
@@ -98,19 +95,27 @@ st.markdown(
 search = st.text_input("🔎 Buscar proyecto")
 
 # =========================
-# APPS
+# APPS COMPLETAS (TODAS LAS TUYAS)
 # =========================
 apps = [
     {"name": "Yolo", "desc": "Detección de objetos con YOLO", "url": "https://yolov5srd.streamlit.app/"},
-    {"name": "WordCloud", "desc": "Nube de palabras automática", "url": "https://wordcloudsrd.streamlit.app/"},
-    {"name": "Vision App", "desc": "Procesamiento de imágenes", "url": "https://visionappsalorivero.streamlit.app/"},
+    {"name": "WordCloud", "desc": "Generador de nubes de palabras", "url": "https://wordcloudsrd.streamlit.app/"},
+    {"name": "Vision App", "desc": "Procesamiento de visión por computador", "url": "https://visionappsalorivero.streamlit.app/"},
     {"name": "Voz a Texto", "desc": "Convierte voz en texto", "url": "https://traductorvozatextosrd.streamlit.app/"},
-    {"name": "TF-IDF EN", "desc": "Análisis de texto en inglés", "url": "https://tfidfsrd.streamlit.app/"},
-    {"name": "Texto a Audio", "desc": "Texto convertido a voz", "url": "https://textoaudio2.streamlit.app/"},
-    {"name": "Sentimientos", "desc": "Análisis emocional de texto", "url": "https://sentimentasalo.streamlit.app/"},
+    {"name": "TF-IDF Inglés", "desc": "Análisis de texto en inglés", "url": "https://tfidfsrd.streamlit.app/"},
+    {"name": "Texto a Audio", "desc": "Convierte texto en audio", "url": "https://textoaudio2.streamlit.app/"},
+    {"name": "TF-IDF Español", "desc": "Análisis de texto en español", "url": "https://tdfespsrd.streamlit.app/"},
+    {"name": "Sentimientos", "desc": "Análisis de sentimientos", "url": "https://sentimentasalo.streamlit.app/"},
+    {"name": "Send MQTT", "desc": "Comunicación MQTT", "url": "https://sendcmqttsalorive.streamlit.app/"},
     {"name": "OCR", "desc": "Reconocimiento de texto en imágenes", "url": "https://ocrsalorivero.streamlit.app/"},
-    {"name": "Control por Voz", "desc": "Interacción por comandos de voz", "url": "https://ctrlvoicesrd.streamlit.app/"},
-    {"name": "RAG Chat", "desc": "Chat con documentos inteligentes", "url": "https://chatpdfsalorivero.streamlit.app/"},
+    {"name": "OCR Audio", "desc": "OCR con salida en audio", "url": "https://ocraudiosrd.streamlit.app/"},
+    {"name": "Intro", "desc": "App introductoria", "url": "https://introprofesrd.streamlit.app/"},
+    {"name": "Dígitos Mano", "desc": "Reconocimiento de dígitos escritos a mano", "url": "https://handwsrd.streamlit.app/"},
+    {"name": "Draw / Tablero", "desc": "Reconocimiento de dibujos en tiempo real", "url": "https://drawrecogsrd.streamlit.app/"},
+    {"name": "Detector Gestos", "desc": "Detección de gestos con cámara", "url": "https://detecgestossr.streamlit.app/"},
+    {"name": "Control por Voz", "desc": "Control de comandos por voz", "url": "https://ctrlvoicesrd.streamlit.app/"},
+    {"name": "RAG", "desc": "Chat con documentos inteligentes", "url": "https://chatpdfsalorivero.streamlit.app/"},
+    {"name": "Mi App (Portafolio)", "desc": "Portafolio principal", "url": "https://salolamejor.streamlit.app/"}
 ]
 
 # =========================
@@ -142,7 +147,6 @@ for i, app in enumerate(apps):
         )
 
         st.link_button("🚀 Abrir App", app["url"])
-
         st.markdown("<br>", unsafe_allow_html=True)
 
 # =========================
@@ -150,6 +154,6 @@ for i, app in enumerate(apps):
 # =========================
 st.markdown("---")
 st.markdown(
-    "<p style='text-align:center; color:#7A2E3A;'>Hecho con ❤️ · Portafolio IA & Data</p>",
+    "<p style='text-align:center; color:#7A2E3A;'>Hecho con ❤️ por Salomé Rivero</p>",
     unsafe_allow_html=True
 )
